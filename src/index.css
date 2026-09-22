@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #0b0410;
+    color: #fdf2f8;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+  }
+}
+
+/* Custom romantic glow & glass styles */
+.glass-panel {
+  background: rgba(22, 10, 36, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 182, 193, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4), inset 0 0 16px rgba(255, 105, 180, 0.05);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 77, 136, 0.6), 0 0 40px rgba(244, 63, 94, 0.3);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 16px rgba(253, 224, 71, 0.6);
+}
+
+.box-glow {
+  box-shadow: 0 0 35px -5px rgba(244, 63, 94, 0.35);
+}
+
+.box-glow-strong {
+  box-shadow: 0 0 50px rgba(255, 51, 102, 0.5), inset 0 0 20px rgba(255, 51, 102, 0.2);
+}
+
+/* Custom romantic scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0717;
+}
+::-webkit-scrollbar-thumb {
+  background: #f43f5e;
+  border-radius: 9999px;
+}
